@@ -307,7 +307,7 @@ clean:
 
 install: all
 	mkdir -p "$(DESTDIR)$(prefix)/bin"
-	$(STRIP) qjs qjsc
+#	$(STRIP) qjs qjsc
 	install -m755 qjs qjsc "$(DESTDIR)$(prefix)/bin"
 	ln -sf qjs "$(DESTDIR)$(prefix)/bin/qjscalc"
 	mkdir -p "$(DESTDIR)$(prefix)/lib/quickjs"
